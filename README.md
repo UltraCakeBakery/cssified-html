@@ -1,18 +1,18 @@
 # [CSSified-HTML](https://just-html.dev) &middot; [![GitHub license](https://img.shields.io/github/license/UltraCakeBakery/CSSified-HTML.svg)](#LICENSE) [![npm version](https://img.shields.io/npm/v/CSSified-HTML.svg?style=flat)](https://www.npmjs.com/package/CSSified-HTML) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 
-CSSified-HTML is a **HTML friendly** alternative to [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) (Cascading Style Sheets) and utility frameworks like [Tailwind](https://github.com/tailwindlabs/tailwindcss) / [UnoCSS](https://github.com/unocss/unocss). CSSified-HTML adds new elements to your HTML, and new attributes to already existing HTML elements, that allow you to **never** have a `*.css|scss|sass|less|pcss` file in your codebase ever again! Instead you just configure your elements in the same markup that defines them, and use the new elements to define `<keyframe>`'s, ~`<mixin>`'s, @`<media>` queries~ and more!
+CSSified-HTML is an **HTML-friendly** alternative to [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) and utility frameworks like [Tailwind](https://github.com/tailwindlabs/tailwindcss) and [UnoCSS](https://github.com/unocss/unocss). It introduces new elements and attributes that allow you to completely eliminate the need for `*.css|scss|sass|less|pcss` files in your codebase. Configure your elements directly within your markup and use new elements to define `<keyframe>`s, `<mixin>`s, `<media>` queries, and more—all within HTML!
 
 ## Features
-- 🦾 CSS property attributes - Every html element now has an attribute for **every** CSS property, with support for complex selectors and media queries. Check the [documentation](#documentation) for examples and syntax instructions.
-- 🧑‍🎨 **Improved** `style` attribute - `style=""` now also has state (`hover:style=""`), media query (`@landscape:style=""`) and [more variants](#documentation).
-- 🎞️ **New** `<animation>` and `<keyframe>` elements - Define complex `@keyframes` directly in your HTML.
-- ✒️ **Automatic** CDN Fonts - Automatically `@import` fonts from a CDN (fonts.google.com) through `font-family:google="Roboto"`.
-- 🏎️ **Incredible performance** - CSS generation is **PRACTICALLY INSTANT** at **0.15ms** on average.
-- 🤏 ~2.7kb min+gzip - Zero dependencies and browser friendly (any browser past > ie8).
-- 🔌A **Vite plugin** is available for every framework (with **SSR** and **no-javascript** support).
-- 📇 Named groups - For more **complex** UIs. Simply `group="banana"` and `group-banana:hover:background-color="red"`.
-- 🛣️ ~[Shortcuts](#shortcuts) - Add your own boolean attributes for quick prototyping and managing design systems~ W.I.P.
-<!-- - [100.000+ CSS Icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons/) - easily and performantly add icons to your website  -->
+- 🦾 **CSS Property Attributes** - Every HTML element now supports attributes for **all** CSS properties, including support for complex selectors and media queries. Check the [documentation](#documentation) for syntax examples.
+- 🧑‍🎨 **Enhanced** `style` **Attribute** - The `style=""` attribute now includes state support (e.g., `hover:style=""`), media queries (`@landscape:style=""`), and more variants.
+- 🎞️ **New Elements** - `<animation>` and `<keyframe>` elements enable defining complex `@keyframes` directly within your HTML.
+- ✒️ **Automatic CDN Fonts** - Effortlessly import fonts from a CDN (fonts.google.com) using `font-family:google="Roboto"`.
+- 🏎️ **Blazing Performance** - CSS generation is nearly **instantaneous**, averaging around **0.15ms**.
+- 🤏 **Compact Size** - Weighing in at only ~2.7kb (minified + gzip), with zero dependencies, and compatible with any browser beyond IE11.
+- 🔌 **Vite Plugin** - Available for all frameworks, with support for **SSR** and **no-JavaScript** environments.
+- 📇 **Named Groups** - Simplify complex UIs with named groups. Use `group="banana"` and style it with `group-banana:hover:background-color="red"`.
+- 🛣️ ~**Custom Shortcuts** - Define boolean attributes for rapid prototyping and design system management~ (W.I.P.). 
+<!-- - [100,000+ CSS Icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons/) - easily and efficiently add icons to your website.  -->
 
 ## Example
 ```html
