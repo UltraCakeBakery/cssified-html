@@ -5,9 +5,9 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm -r dev",
-    "dev:watch": "pnpm -r dev:watch",
-    "build": "pnpm -r build",
+    "dev": "tsup src/index.ts --format esm,cjs,iife --sourcemap --dts",
+    "dev:watch": "tsup src/index.ts --format esm,cjs,iife --sourcemap --dts --watch",
+    "build": "tsup src/index.ts --format esm,cjs,iife --minify --sourcemap --dts",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore --fix --ext .js,.ts"
   },
@@ -22,14 +22,11 @@
   "homepage": "https://github.com/UltraCakeBakery/CSSified-HTML#readme",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.19.50",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
     "eslint": "^8.57.1",
-    "eslint-plugin-import": "^2.30.0",
-    "tsup": "^6.7.0",
-    "typescript": "^4.9.5",
-    "vite": "^3.2.11"
+    "tsup": "^8.3.0",
+    "typescript": "^5.4.5"
   },
   "type": "module"
 }
