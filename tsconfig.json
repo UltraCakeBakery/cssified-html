@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "ES2023",
     "module": "esnext",
     "lib": ["esnext", "DOM"],
     "moduleResolution": "node",
@@ -10,11 +10,6 @@
     "resolveJsonModule": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
-  },
-  "paths": {
-    "@cssified-html/core": ["./packages/core/src/index.ts"],
-    "@cssified-html/vite": ["./packages/vite/src/index.ts"],
-    "@cssified-html/runtime": ["./packages/runtime/src/index.ts"],
   },
   "exclude": [
     "**/dist/**",

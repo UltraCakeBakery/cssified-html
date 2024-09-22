@@ -5,16 +5,3 @@ export interface Map {
     medias?: { [key: string]: { [key: string]: string[] } },
     propertyCounts?: { [key: string]: number }
 }
-
-export interface ValidatedElement {
-    tag: string,
-    attributes: ValidatedAttribute[]
-}
-
-export interface ValidatedAttribute {
-    name: string,
-    value: string,
-    property: string,
-    suffix: string | null,
-    prefixes: string[]
-}
