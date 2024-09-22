@@ -1,6 +1,6 @@
 {
   "name": "cssified-html",
-  "version": "1.0.0",
+  "version": "2.0.0-next",
   "description": "A Javascript library and vite-plugin that adds a bunch of new exciting CSS related elements and attributes to your HTML.",
   "private": true,
   "main": "index.js",
