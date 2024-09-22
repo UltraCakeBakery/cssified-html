@@ -56,7 +56,14 @@
 				]
 			}
 		],
-		// "padding-line-between-statements": [ "error", { blankLine: "always", prev: "*", next: "return" }],
+		"padding-line-between-statements": [
+			"error",
+			{
+				"blankLine": "always",
+				"prev": "*",
+				"next": "return"
+			}
+		],
 		"camelcase": "error",
 		"comma-dangle": [
 			"error",
@@ -66,7 +73,7 @@
 			"error",
 			"multi-line"
 		],
-		"eol-last": "error", // TODO: disable auto addition of new lines automatically in vscode, then disable this
+		"eol-last": "off",
 		"no-unused-vars": [
 			"error",
 			{

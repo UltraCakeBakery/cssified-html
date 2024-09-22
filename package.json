@@ -20,10 +20,6 @@
     "url": "https://github.com/UltraCakeBakery/CSSified-HTML/issues"
   },
   "homepage": "https://github.com/UltraCakeBakery/CSSified-HTML#readme",
-  "funding": {
-    "type": "patreon",
-    "url": "https://www.patreon.com/jackvanderbilt"
-  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.19.50",
